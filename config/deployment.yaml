@@ -12,6 +12,7 @@ spec:
   template:
     metadata:
       labels:
+        app: nginx-reverse-proxy
         service: nginx-reverse-proxy
     spec:
       containers:
