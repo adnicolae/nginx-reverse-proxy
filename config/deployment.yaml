@@ -6,6 +6,9 @@ metadata:
   name: nginx-reverse-proxy
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-reverse-proxy
   template:
     metadata:
       labels:
